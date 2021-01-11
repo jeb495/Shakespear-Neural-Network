@@ -1,4 +1,4 @@
-# :brain: brain.js short story script
+# :brain: brain.js short story neural network
 A Brain.js Neural Network that creates a short story based on training data
 
 
