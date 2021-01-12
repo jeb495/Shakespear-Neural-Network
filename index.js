@@ -17,7 +17,7 @@ const trainingData = [
     //options
     iterations: 1500,
     log: (details) => console.log(details),
-    errorThresh: 0.011,
+    errorThresh: 0.021,
   });
   console.log('Training result: ', result);
 
@@ -30,5 +30,5 @@ const run4 = lstm.run('best');
 //displaying results in console
 console.log('run 1: Jacob' + run1);
 console.log('run 2: Martha' + run2);
-console.log('run 3: It' + run3);
-console.log('run 4: for' + run4);
+console.log('run 3: Jacob' + run3);
+console.log('run 4: Martha' + run4);
