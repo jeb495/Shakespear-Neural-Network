@@ -3,13 +3,13 @@ const brain = require('brain.js');
 //input your own data for different results
 //can be stored as json 
 const trainingData = [
-    'Jacob was a smart person.',
-    'Jacob was not very old.',
-    'Martha looked at Jacob and Jacob looked at Martha.',
-    'It was love at first sight for Martha, but Jacob did not feel the same.',
-    'Jacob was not the best person for Martha.',
-    'Martha was a good person, compared to Jacob.',
-    'Martha and Jacob both drink water and swim.',
+    'These violent delights have violent ends And in their triump die, like fire and powder Which, as they kiss, consume',
+    'With mirth and laughter let old wrinkles come',
+    'Wisely and slow; they stumble that run fast',
+    'Conscience doth make cowards of us all',
+    'To die, to sleep - To sleep, perchance to dream - ay, there the rub, For in this sleep of death what dreams may come',
+    'Some are born great, others achieve greatness',
+    'Some Cupid kills with arrows, some with traps',
   ];
 //creating brain (long short term memory: https://en.wikipedia.org/wiki/Long_short-term_memory)
   const lstm = new brain.recurrent.LSTM();
@@ -17,18 +17,18 @@ const trainingData = [
     //options
     iterations: 1500,
     log: (details) => console.log(details),
-    errorThresh: 0.021,
+    errorThresh: 0.011, //changing the error threshold will directly affect the time it takes to train the network
   });
   console.log('Training result: ', result);
 
   //run inputs. change to suit your training data
-  const run1 = lstm.run('Jacob');
-const run2 = lstm.run('Martha');
-const run3 = lstm.run('water');
-const run4 = lstm.run('best');
+  const run1 = lstm.run('We do');
+const run2 = lstm.run('Up to thee');
+const run3 = lstm.run('chance');
+const run4 = lstm.run('dream');
 
 //displaying results in console
-console.log('run 1: Jacob' + run1);
-console.log('run 2: Martha' + run2);
-console.log('run 3: Jacob' + run3);
-console.log('run 4: Martha' + run4);
+console.log('run 1:' + run1);
+console.log('run 2:' + run2);
+console.log('run 3:' + run3);
+console.log('run 4:' + run4);
