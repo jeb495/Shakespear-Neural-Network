@@ -8,6 +8,7 @@ A Brain.js Neural Network that creates a short story based on training data
     
 #### Please Note: 
     you must have Node JS and Brain.js installed on your system
+    
     Outcome of this neural network greatly depends on the quality of the training data given
     
 
