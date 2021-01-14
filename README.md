@@ -11,5 +11,7 @@ A Brain.js Neural Network that creates a Shakespear quote based on training data
 
     This neural network can be molded into whatever you want, given you have the data
     
+    Outcome of this neural network greatly depends on the quality of the training data given
+    
 
 
