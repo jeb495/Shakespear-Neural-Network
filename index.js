@@ -18,6 +18,7 @@ const trainingData = [
     iterations: 1500, //the number of iterations may affect your neural networks performance
     log: (details) => console.log(details),
     errorThresh: 0.011, //changing the error threshold will directly affect the time it takes to train the network
+                        //0.011 seems to be an optimal error threshold
   });
   console.log('Training result: ', result);
 
