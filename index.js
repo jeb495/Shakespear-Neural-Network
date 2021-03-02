@@ -1,5 +1,6 @@
 const brain = require('brain.js');
 
+//training data can be anything. See https://github.com/BrainJS/brain.js#brainjs for documentation
 //input your own data for different results
 //can be stored as json 
 const trainingData = [
