@@ -11,6 +11,7 @@ const trainingData = [
     'To die, to sleep - To sleep, perchance to dream - ay, there the rub, For in this sleep of death what dreams may come',
     'Some are born great, others achieve greatness',
     'Some Cupid kills with arrows, some with traps',
+    'All causes shall give way: I am in blood Stepp’d in so far that, should I wade no more, Returning were as tedious as go o’er',
   ];
 //creating brain (long short term memory: https://en.wikipedia.org/wiki/Long_short-term_memory)
   const lstm = new brain.recurrent.LSTM();
@@ -19,7 +20,7 @@ const trainingData = [
     iterations: 1500, //the number of iterations may affect your neural networks performance
     log: (details) => console.log(details),
     errorThresh: 0.011, //changing the error threshold will directly affect the time it takes to train the network
-                        //0.011 seems to be an optimal error threshold
+                        //0.011 seems to be an optimal error threshold, any others seem to have mixed results
   });
   console.log('Training result: ', result);
 
