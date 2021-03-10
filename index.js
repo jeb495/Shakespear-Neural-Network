@@ -25,10 +25,10 @@ const trainingData = [
   console.log('Training result: ', result);
 
   //run inputs. change to suit your training data
-  const run1 = lstm.run('the');
-const run2 = lstm.run('we');
-const run3 = lstm.run('I');
-const run4 = lstm.run('should');
+  const run1 = lstm.run('arrows with traps arrows');
+const run2 = lstm.run('dream');
+const run3 = lstm.run('fast laughter');
+const run4 = lstm.run('should you?');
 
 //displaying results in console
 console.log('run 1:' + run1);
