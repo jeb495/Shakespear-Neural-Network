@@ -1,4 +1,4 @@
-# :brain: brain.js short story neural network
+# :brain: brain.js text generation neural network
 A Brain.js Neural Network that creates a Shakespear quote based on training data
 
 
